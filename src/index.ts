@@ -40,7 +40,7 @@ function Logger (namespace: string): Logger {
     debugLevels.trace(formatter, ...args)
   }
 
-  // errors are logged if it matches any namespace
+  // errors are logged if they match any namespace
   log.error = (formatter: any, ...args: any[]) => {
     if (debugNamespaceLevels.error.enabled) {
       return debugNamespaceLevels.error(formatter, ...args)
@@ -57,7 +57,7 @@ function Logger (namespace: string): Logger {
     if (debugNamespaceLevels.trace.enabled) {
       return debugNamespaceLevels.trace(formatter, ...args)
     }
-    return debugLevels.trace(formatter, ...args) 
+    debugLevels.trace(formatter, ...args) 
   }
 
   // trace are only logged if they match trace

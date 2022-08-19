@@ -46,7 +46,7 @@ function Logger(namespace) {
         }
         debugLevels.trace.apply(debugLevels, __spreadArray([formatter], args, false));
     };
-    // errors are logged if it matches any namespace
+    // errors are logged if they match any namespace
     log.error = function (formatter) {
         var args = [];
         for (var _i = 1; _i < arguments.length; _i++) {
@@ -67,7 +67,7 @@ function Logger(namespace) {
         if (debugNamespaceLevels.trace.enabled) {
             return debugNamespaceLevels.trace.apply(debugNamespaceLevels, __spreadArray([formatter], args, false));
         }
-        return debugLevels.trace.apply(debugLevels, __spreadArray([formatter], args, false));
+        debugLevels.trace.apply(debugLevels, __spreadArray([formatter], args, false));
     };
     // trace are only logged if they match trace
     log.trace = function (formatter) {
