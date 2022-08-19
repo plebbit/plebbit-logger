@@ -1,5 +1,4 @@
 import Logger from '../src/index.js'
-import assert from 'assert'
 const log = Logger('plebbit-logger:test:something')
 
 console.log('DEBUG=' + process.env.DEBUG)
