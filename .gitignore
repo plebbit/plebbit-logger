@@ -4,4 +4,4 @@ coverage
 package-lock.json
 yarn.lock
 docs
-dist
+

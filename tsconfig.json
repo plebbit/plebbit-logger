@@ -1,7 +1,12 @@
 {
-  "extends": "aegir/src/config/tsconfig.aegir.json",
+  "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "module": "commonjs",
+    "declaration": true,
+    "target": "es5",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src",
