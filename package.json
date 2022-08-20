@@ -21,7 +21,7 @@
   "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "rm -fr dist && tsc",
-    "test": "npm run build && DEBUG=plebbit-logger:* node dist/test && DEBUG=plebbit-logger:test:something node dist/test && DEBUG=plebbit-logger:test:* node dist/test && DEBUG=plebbit-logger:error node dist/test && DEBUG=plebbit-logger:trace node dist/test && DEBUG=plebbit-logger:test:something:trace node dist/test"
+    "test": "npm run build && DEBUG=my-app:* node dist/test && DEBUG=my-app:test:something node dist/test && DEBUG=my-app:test:* node dist/test && DEBUG=my-app:error node dist/test && DEBUG=my-app:trace node dist/test && DEBUG=my-app:test:something:trace node dist/test && DEBUG=my-app:test:*,-*:trace node dist/test"
   },
   "dependencies": {
     "debug": "4.3.3"
