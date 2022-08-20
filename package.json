@@ -11,14 +11,13 @@
     "node": ">=16.0.0",
     "npm": ">=7.0.0"
   },
+  "main": "dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "files": [
     "src",
     "dist/src",
     "!dist/test"
   ],
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "rm -fr dist && tsc",
     "test": "npm run build && DEBUG=my-app:* node dist/test && DEBUG=my-app:test:something node dist/test && DEBUG=my-app:test:* node dist/test && DEBUG=my-app:error node dist/test && DEBUG=my-app:trace node dist/test && DEBUG=my-app:test:something:trace node dist/test && DEBUG=my-app:test:*,-*:trace node dist/test"
