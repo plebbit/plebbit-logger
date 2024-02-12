@@ -2,11 +2,9 @@
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "module": "commonjs",
+    "module": "ES2020",
     "declaration": true,
-    "target": "es5",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "target": "ES2020"
   },
   "include": [
     "src",

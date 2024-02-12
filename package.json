@@ -1,6 +1,7 @@
 {
   "name": "@plebbit/plebbit-logger",
   "version": "0.0.1",
+  "type": "module",
   "keywords": [
     "plebbit",
     "subplebbit"
@@ -8,8 +9,7 @@
   "repository": "github:plebbit/plebbit-logger",
   "license": "GPL-2.0",
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
+    "node": ">=18.0.0"
   },
   "main": "dist/src/index.js",
   "types": "./dist/src/index.d.ts",
@@ -23,12 +23,12 @@
     "test": "npm run build && DEBUG=my-app:* node dist/test && DEBUG=my-app:test:something node dist/test && DEBUG=my-app:test:* node dist/test && DEBUG=my-app:error node dist/test && DEBUG=my-app:trace node dist/test && DEBUG=my-app:test:something:trace node dist/test && DEBUG=my-app:test:*,-*:trace node dist/test"
   },
   "dependencies": {
-    "debug": "4.3.3"
+    "debug": "4.3.4"
   },
   "devDependencies": {
-    "@tsconfig/recommended": "1.0.1",
-    "@types/debug": "4.1.7",
-    "@types/node": "18.7.7",
-    "typescript": "4.5.4"
+    "@tsconfig/recommended": "1.0.3",
+    "@types/debug": "4.1.12",
+    "@types/node": "18.19.0",
+    "typescript": "5.3.3"
   }
 }

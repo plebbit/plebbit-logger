@@ -9,4 +9,4 @@ declare namespace Logger {
     var enable: (namespaces: string) => void;
     var enabled: (namespaces: string) => boolean;
 }
-export = Logger;
+export default Logger;

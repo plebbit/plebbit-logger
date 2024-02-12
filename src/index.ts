@@ -83,4 +83,4 @@ Logger.enabled = (namespaces: string) => {
   return Debug.enabled(namespaces)
 }
 
-export = Logger
+export default Logger
